@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Acme',sans-serif;
+}
+html{
+    font-size:22px;
+}
+
+
+body{
+    background-color: #353b48;
+    padding: 1rem ;
+}
+.box{
+    height: 8rem;
+    border: 5px solid rgba(255, 255, 255, 0.412);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.box img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    transition: 0.5s;
+    transform-origin: top;
+}
+.box img:hover{
+    transform: scale(1.4);
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:1rem;    
+} 
+.control{
+    max-width:1200px;
+    height:100px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 0.5rem;
+    background-color: rgba(51, 185, 145, 0.848);
+    color: aliceblue;
+    border: 2px solid rgba(51, 185, 145, 0.848);
+    cursor:pointer;
+    transition: 0.3s;
+    border-radius: 3px;
+    
+}
+.btn button:hover,
+.btn .btn-clicked{
+    background-color: #353b48;
+}
+#search{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    padding: 0 10px;
+    border: 2px solid rgba(51, 185, 145, 0.848);
+    border-radius: 3px;
+    font-size: 0.7rem;
+
+}
